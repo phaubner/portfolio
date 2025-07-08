@@ -1,0 +1,277 @@
+* {
+    margin: auto;
+}
+html {
+    background-color: black;
+}
+header {
+    display: block;
+    border-bottom: 1px gray solid;
+    height: 80px;
+}
+h1 {
+    display: inline-block;
+    position: absolute;
+    left: 1%;
+    margin: 20px 30px 15px 30px;
+    width: 30%;
+}
+nav {
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    width: 20%;
+    margin: 30px 0;
+}
+li {
+    display: inline;
+    font-size: 18pt;
+    padding: 5%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.profilePic {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 30%;
+}
+#projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project {
+    height: 70%;
+}
+h2 {
+    color: white;
+    margin: 100px 0 50px 80px;
+    font-size: 30px;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+#project1 img:first-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 30%;
+    margin-left: 80px;
+}
+#Bookstagram2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 20%;
+}
+#project1 img:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 27%;
+}
+#project2 img:first-of-type {
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 32%;
+}
+#cover {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 19%;
+}
+#project2 img:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    width: 32%;
+}
+#project3 img:first-of-type {
+    margin-left: 80px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 90%;
+    width: 27%;
+}
+#topHalf {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 90%;
+    width: 24.4%;
+}
+#project3 img:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 70%;
+    width: 24.8%;
+}
+#comicConCover {
+    object-fit: cover;
+    object-position: 100% 30%;
+}
+.bookImage, .comicImage, .recipeImage {
+    width: 30%;
+    height: 60%;
+    border-radius: 3%;
+}
+
+/* ABOUT PAGE */
+#devH2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 100px 0;
+}
+#aboutGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+#aboutGrid img {
+    width: 90%;
+}
+.aboutPage p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+/* PROJECTS PAGE */
+#projectsNav {
+    margin: 100px 0;
+    text-align: center;
+    /* width: 100%; */
+}
+#projectsNav li {
+    background-color: aqua;
+    margin: 0 30px;
+    padding: 1%;
+    border-radius: 30px;
+}
+#projectsNav li:first-of-type {
+    margin-left: 0;
+}
+#projectsNav li:last-of-type {
+    padding: 1% 2%;
+}
+#projectsNav a {
+    color: black;
+}
+#bookGrid, #comicGrid, #recipeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.projectsPage h2 {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.projectsPage img {
+    width: 70%;
+    height: 70%;
+}
+.projectsPage p {
+    width: 45%;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:550px){
+    h1 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    nav {
+        width: 300px;
+    }
+    .homePage h2, #project1 img:first-of-type, #project2 img:first-of-type, #project3 img:first-of-type {
+        margin-left: 20px;
+    }
+    #devH2 {
+        font-size: 30px;
+    }
+    .aboutPage p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    #projectsNav li {
+        font-size: 18px;
+        margin: 100px 15px;
+    }
+    .projectsPage p {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width:551px) and (max-width:700px) {
+    h1 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    nav {
+        width: 300px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    .homePage h2, #project1 img:first-of-type, #project2 img:first-of-type, #project3 img:first-of-type {
+        margin-left: 30px;
+    }
+    #devH2 {
+        font-size: 30px;
+    }
+    .aboutPage p {
+        font-size: 15px;
+        line-height: 50px;
+    }
+    #projectsNav li {
+        font-size: 18px;
+    }
+    .projectsPage p {
+        width: 60%;
+    }
+}
+@media screen and (min-width:701px) and (max-width:1400px) {
+    nav {
+        width: 300px;
+    }
+    nav ul{
+        padding: 0;
+    }
+    .homePage h2, #project1 img:first-of-type, #project2 img:first-of-type, #project3 img:first-of-type {
+        margin-left: 50px;
+    }
+    #devH2 {
+        font-size: 45px;
+        margin: 80px 0;
+    }
+    .aboutPage p {
+        font-size: 20px;
+        line-height: 70px;
+    }
+    .projectsPage p {
+        width: 55%;
+    }
+}
+@media screen and (min-width:1401px) and (max-width:2150px) {
+    nav {
+        width: 30%;
+    }
+}
